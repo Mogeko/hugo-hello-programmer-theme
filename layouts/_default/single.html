@@ -3,7 +3,8 @@
 {{ partial "post.html" . }}
 
 <div class="post-comment">
-  {{ template "_internal/disqus.html" . }}
+    <!-- Comments -->
+    {{ partial "comments.html" . }}
 </div>
 
 <div class="paging post-paging">

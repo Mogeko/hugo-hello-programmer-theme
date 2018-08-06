@@ -8,12 +8,14 @@
   </div>
 </a>
 
+{{ if or .Params.toc (and .Site.Params.toc (ne .Params.toc false)) }}
 <div class="post-toc">
   <span class="title">
     Table of contents
   </span>
   {{ .TableOfContents }}
 </div>
+{{ end }}
 
 <section class="post-content">
   {{ .Content }}
